@@ -1,36 +1,17 @@
 import React from 'react'
-
-
-
-function Bank(name) {
-  let _balance = 0;
-  this.name = name;
-
-  this.getBalance = function () {
-    return _balance;
-  }
-
-  this.setBalance = function (amount) {
-    _balance += amount;
-  }
-
-}
+import Header from './ui/Header'
+import Main from './features/home/Main'
 
 const App = () => {
-
-  const per = new Bank('prabhu');
-  per.setBalance(90000);
-
-
-  console.log(per.getBalance());
-
-
-
   return (
     <div>
-
-
+      <Header />
+      <Main />
     </div>
   )
 }
+
 export default App
+
+
+
