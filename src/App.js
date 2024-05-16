@@ -1,14 +1,17 @@
 import React from 'react'
-import Header from './ui/Header'
-import Main from './features/home/Main'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import Home from './features/Home';
 
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />
+  },
+  {}
+]);
 const App = () => {
-  return (
-    <div>
-      <Header />
-      <Main />
-    </div>
-  )
+
+  return <RouterProvider router={router} />
 }
 
 export default App

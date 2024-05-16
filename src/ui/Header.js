@@ -1,5 +1,4 @@
 import React from 'react'
-import Main from '../features/home/Main'
 
 
 const Header = () => {
