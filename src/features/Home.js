@@ -1,26 +1,13 @@
 import React from 'react'
-import { products } from '../dummy/Data';
+import { movieSlice } from './movies/moviesSlice'
+import AddForm from './users/AddForm';
 
-
-const personName = 'lios';
 const Home = () => {
+
+  console.log(movieSlice.reducer);
   return (
-    <div className='p-4'>
-
-      <div>
-        {products.map((product) => {
-          return <div key={product.id} className='space-y-2 cursor-pointer'>
-            <h1 className='text-2xl'>{product.title}</h1>
-            <img src={product.thumbnail} alt="" />
-
-          </div>
-        })}
-
-      </div>
-
-
-
-
+    <div>
+      <AddForm />
     </div>
   )
 }
