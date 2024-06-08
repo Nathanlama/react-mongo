@@ -1,6 +1,7 @@
-import { configureStore } from "@reduxjs/toolkit"
-import { movieSlice } from "../features/movies/moviesSlice"
+import { configureStore } from "@reduxjs/toolkit";
+import { movieSlice } from "../features/movies/movieSlice";
 import { userSlice } from "../features/users/useSlice";
+
 
 
 
@@ -11,5 +12,8 @@ export const store = configureStore({
   }
 });
 
-
-console.log(store.getState());
+// store.dispatch({
+//   type: 'movieSlice/addMovies',
+//   payload: { n: 90 }
+// });
+// console.log(store.getState());

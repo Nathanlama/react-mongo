@@ -1,6 +1,6 @@
 
 
-export const nios = 9000
+export const nios = 9000;
 
 export const products = [
   {

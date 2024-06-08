@@ -8,6 +8,8 @@ const RootLayout = () => {
       <Header />
 
       <Outlet />
+
+
     </>
   )
 }

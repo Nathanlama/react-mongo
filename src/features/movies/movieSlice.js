@@ -2,6 +2,11 @@ import { createSlice } from "@reduxjs/toolkit";
 
 
 
+
+
+
+
+
 export const movieSlice = createSlice({
   name: 'movieSlice',
   initialState: {
@@ -21,11 +26,11 @@ export const movieSlice = createSlice({
     ]
   },
   reducers: {
-    addmovies: (state, action) => {
+    addMovies: (state, action) => {
       state.movies.push(action.payload);
     }
   }
 });
 
 
-export const { addmovies } = movieSlice.actions;
+export const { addMovies } = movieSlice.actions;

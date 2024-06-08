@@ -1,13 +1,25 @@
 import React from 'react'
-import { movieSlice } from './movies/moviesSlice'
-import AddForm from './users/AddForm';
+import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router';
 
 const Home = () => {
+  const { users } = useSelector((state) => state.userSlice);
 
-  console.log(movieSlice.reducer);
+
   return (
     <div>
-      <AddForm />
+
+      <div onClick={() => {
+        document.getElementsByClassName('.root').innerHTML = 'red';
+        console.log('hello');
+      }} className="root">
+        <h1>as;ldjsa;dlj;l</h1>
+      </div>
+
+
+
+
+
     </div>
   )
 }
